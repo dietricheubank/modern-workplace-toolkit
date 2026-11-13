@@ -41,3 +41,9 @@ python cli.py examples/sample_evidence.json
 The CLI prints PASS or GAPS for each of five stages—request, provision, secure, operate, and retire. Its exit status is 0 only if all required evidence flags are true; otherwise 1. All example evidence is synthetic. The checklist is not a substitute for approved organizational security policies, asset management, records retention, or regulatory requirements.
 
 **Development:** `python -m unittest discover -s tests -v`. CI runs the suite on each push and pull request.
+
+## Configurable evidence policy engine
+
+The [policy module](policies.py) evaluates custom stage-and-control requirements, distinguishing `pass`, `fail`, and `missing`, with high/medium/low severity. Unlike basic yes/no checks, absent evidence cannot silently pass. See [policy tests](tests/test_policies.py).
+
+This is a public sample policy mechanism, not a substitute for organizational baseline standards, device telemetry or authoritative compliance assessment.
