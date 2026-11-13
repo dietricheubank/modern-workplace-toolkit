@@ -1,0 +1,22 @@
+{
+  "request": {
+    "business_owner": true,
+    "approved": true
+  },
+  "provision": {
+    "asset_tag": true,
+    "enrollment_verified": true
+  },
+  "secure": {
+    "encryption": true,
+    "patch_policy": true
+  },
+  "operate": {
+    "support_owner": true,
+    "monitoring": true
+  },
+  "retire": {
+    "data_wipe_evidence": true,
+    "inventory_updated": true
+  }
+}
