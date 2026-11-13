@@ -31,3 +31,13 @@ License: MIT (parent repository).
 ## Repository status
 
 This is the standalone public project. It is developed independently with GitHub Actions CI.
+
+## Evidence checklist runner
+
+```bash
+python cli.py examples/sample_evidence.json
+```
+
+The CLI prints PASS or GAPS for each of five stages—request, provision, secure, operate, and retire. Its exit status is 0 only if all required evidence flags are true; otherwise 1. All example evidence is synthetic. The checklist is not a substitute for approved organizational security policies, asset management, records retention, or regulatory requirements.
+
+**Development:** `python -m unittest discover -s tests -v`. CI runs the suite on each push and pull request.
