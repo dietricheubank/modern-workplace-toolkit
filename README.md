@@ -2,6 +2,11 @@
 
 Vendor-neutral endpoint lifecycle policy validation and evidence checklist generator.
 
+## Workplace labs
+
+- [Teams Calling Cutover Lab](labs/teams-calling-cutover/) — lead a fictional voice migration through an inbound calling failure.
+- [Clinical Workstation Performance Lab](labs/clinical-workstation-performance/) — measure sign-in, desktop visibility, and application readiness.
+
 ## Run
 
 Requires Python 3.11+ and no third-party dependencies.
